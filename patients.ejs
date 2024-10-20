@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1> Hope Heart Hospital</h1>
+    <h1>Patient Records</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Diagnosis</th>
+            <th>Doctor Assigned</th>
+            <th>Actions</th>
+        </tr>
+        <% patients.forEach(patient => { %>
+            <tr>
+                <td><%= patient.name %></td>
+                <td><%= patient.age %></td>
+                <td><%= patient.gender %></td>
+                <td><%= patient.diagnosis %></td>
+                <td><%= patient.doctorAssigned %></td>
+                <td>
+                    <a href="/patients/edit/<%= patient._id %>" class="btn btn-primary">Edit</a>
+                    <form action="/patients/delete/<%= patient._id %>" method="POST" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+
+    <h2>Add New Patient</h2>
+    <form action="/api/patients" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <select name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="text" name="diagnosis" placeholder="Diagnosis" required>
+        <input type="text" name="doctorAssigned" placeholder="Doctor Assigned" required>
+        <button type="submit">Add Patient</button>
+    </form>
+</body>
+</html>

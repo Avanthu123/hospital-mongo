@@ -1,0 +1,53 @@
+/* editPatient.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1eb; /* Light cream background */
+    color: #5b3e31; /* Dark brown text */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #8b6a50; /* Light brown for heading */
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #d1c2b1;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #5b3e31;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1c2b1;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #5b3e31;
+}
+
+button.btn-success {
+    padding: 10px 20px;
+    background-color: #5b3e31; /* Dark brown for button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn-success:hover {
+    background-color: #8b6a50; /* Light brown hover */
+}
