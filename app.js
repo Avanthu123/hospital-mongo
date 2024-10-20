@@ -5,7 +5,7 @@ const app = express();
 const patientRoutes = require('./routes/patientRoutes');
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://<user>:<password>@mycluster.rta4s.mongodb.net/hospital', {
+mongoose.connect('mongodb+srv://avanthu123:mymongoDB!1@mycluster.rta4s.mongodb.net/hospital', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

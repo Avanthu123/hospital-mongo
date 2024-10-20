@@ -1,32 +1,88 @@
+/* patientRecords.css */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1eb; /* Light cream background */
+    color: #5b3e31; /* Dark brown text */
+    margin: 0;
+    padding: 20px;
 }
 
-h1, h2 {
-    color: #333;
+h1 {
+    color: #8b6a50; /* Warm light brown for heading */
+    margin-bottom: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    background-color: #fff; /* White table background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #d1c2b1; /* Soft border with light brown */
 }
 
-th, td {
-    padding: 8px;
-    text-align: left;
+th {
+    background-color: #8b6a50; /* Light brown for header background */
+    color: white;
+    padding: 10px;
 }
 
-form {
-    margin-top: 20px;
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f6f3; /* Slightly lighter rows */
+}
+
+a.btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    color: white;
+    background-color: #5b3e31; /* Dark brown button */
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+a.btn:hover {
+    background-color: #8b6a50; /* Hover with light brown */
+}
+
+button.btn-danger {
+    padding: 6px 12px;
+    color: white;
+    background-color: #c44f42; /* Soft red for delete button */
+    border: none;
+    border-radius: 4px;
+}
+
+button.btn-danger:hover {
+    background-color: #a83e34;
 }
 
 form input, form select {
-    margin: 5px;
-    padding: 5px;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #d1c2b1;
+    border-radius: 4px;
+    background-color: #fff; /* White form fields */
+    color: #5b3e31;
+}
+
+form button {
+    padding: 8px 16px;
+    background-color: #5b3e31; /* Dark brown button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #8b6a50;
 }
